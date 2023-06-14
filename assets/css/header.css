@@ -109,7 +109,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  background-size: contain;
   padding: 30px;
+  padding-bottom: 120px;
+  padding-top: 60px;
   max-width: 100%;
   height: auto;
 }
@@ -117,7 +120,8 @@
   width: 50%;
   height: auto;
   object-fit: contain;
-  margin-left: 20%;
+  margin-left: 15%;
+  margin-top: -5%;
 }
 .wrapper h3 {
   font-family: "Inter";
