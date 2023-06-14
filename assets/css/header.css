@@ -11,6 +11,7 @@
   background: #292d2c;
   display: flex;
   justify-content: center;
+  padding: 10px;
   align-items: center;
   margin-bottom: 60px;
 }
