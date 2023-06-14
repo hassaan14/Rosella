@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  height: 90px;
+  background: #292d2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.logo {
+  width: 75%;
+}
+.option {
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.nav_content {
+  font-size: 15px;
+}
+.nav_button {
+  width: 100%;
+  height: 35px;
+  color: #ffffff;
+  background: #c70039;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+}
+.text h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 65px;
+  color: #292d2c;
+  margin-bottom: 30px;
+}
+.text h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 35px;
+  letter-spacing: -0.408px;
+  color: #292d2c;
+  margin-bottom: 20px;
+}
+.text h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #292d2c;
+}
+.text p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: -0.408px;
+  color: #7a7a7a;
+  margin-bottom: 70px;
+}
+
+.image_bg {
+  background-image: url("../images/circle_lines.png");
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.join_btn {
+  background: #c70039;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  width: 220px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: -0.408px;
+}
+.image_bg_elip {
+  background-image: url("../images/Group 226.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 30px;
+  max-width: 100%;
+  height: auto;
+}
+.image_bg_elip img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  margin-left: 20%;
+}
+.wrapper h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #292d2c;
+}
+.wrapper p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.408px;
+  color: #7a7a7a;
+}
+.stepper {
+  position: relative;
+  padding-left: 45px;
+  list-style: none;
+}
+.stepper::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width: 3px;
+  height: calc(100% - 6px);
+  background-color: #d9d9d9;
+}
+.stepper_item {
+  position: relative;
+  counter-increment: list;
+  margin-bottom: 5%;
+}
+.stepper_item:not(:last-child) {
+  padding-bottom: 40px;
+}
+.stepper_item::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: -30px;
+  height: 100%;
+  width: 10px;
+}
+.stepper_item::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -37px;
+  width: 12px;
+  height: 12px;
+  border: 10px solid #292d2c;
+  border-radius: 50%;
+  background-color: #292d2c;
+}
+.stepper_item:hover::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -37px;
+  width: 12px;
+  height: 12px;
+  border: 10px solid #c70039;
+  border-radius: 50%;
+  background-color: #c70039;
+}
+.row {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Box {
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 0%;
+  margin-inline: 6%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.Box:hover,
+.Box:hover .Box_content {
+  background-color: #292d2c;
+  color: #ffffff;
+  width: 200px;
+  height: auto;
+}
+.Box:hover .Box_heading,
+.Box:hover .small_heading {
+  background-color: #c70039;
+  color: #ffffff;
+  width: 260px;
+  height: auto;
+}
+.Box_heading {
+  background-color: #f4f4f4;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: #292d2c;
+  margin-bottom: 5%;
+  margin-top: 20px;
+  margin-left: -10%;
+  margin-right: -10%;
+  border-radius: 6px;
+}
+.small_heading {
+  background-color: #f4f4f4;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #292d2c;
+  padding: 6px;
+}
+.Box_content {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  color: #292d2c;
+}
+.footer_star {
+  display: inline-block;
+  margin-bottom: 5%;
+}
+.Stars {
+  margin: 8;
+  width: 20px;
+  height: auto;
+}
+.dashes {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 2%;
+  margin-bottom: 10%;
+}
+#red_logo_box {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  left: 5%;
+  top: -12%;
+}
+.black_box {
+  background-color: black;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+  position: relative;
+}
+.black_box_content h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 54px;
+  padding: 2%;
+
+  color: #ffffff;
+}
+.black_box_content p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 39px;
+  color: #ffffff;
+}
+.email_input {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 20px;
+  width: 60%;
+  height: 14px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#input_field {
+  border: none;
+  outline: none;
+}
+#submit_btn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 5px;
+  border: none;
+  color: #ffffff;
+  background: #c70039;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 43px;
+}
+.minimize {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.accord_btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.popup_modal {
+  margin-bottom: 150px;
+}
+.black_rectangle {
+  background-color: black;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+  position: relative;
+}
+#Round_logo {
+  position: absolute;
+  width: 400px;
+  left: 65%;
+  top: -80%;
+}
+.Roella_logo_red {
+  width: 60%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.social_media_logo {
+  display: flex;
+  margin-bottom: 35%;
+  gap: 6px;
+  height: 25px;
+}
+.footer_nav h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #292d2c;
+}
+.footer_nav p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #73767a;
+  margin-bottom: 20px;
+}
+.accordion-button::after {
+  background-image: url("../images/Group\ 157.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 30px;
+}
+.accordion-button[aria-expanded="true"]::after {
+  background-image: url("../images/Group\ 158.png");
+}
+.accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.accordion .accordion-button {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+}
+.accordion .accordion-button:not(.collapsed) {
+  color: inherit !important;
+}
