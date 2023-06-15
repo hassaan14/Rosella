@@ -1,6 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap");
+
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+  }
+  .image_bg {
+    text-align: center;
+  }
+  .text,
+  .wrapper {
+    padding: 20px;
+    /* text-align: center; */
+  }
+  .image_bg_elip {
+    text-align: center;
+  }
+  .image_bg_elip img {
+    max-width: 100%;
+    height: auto;
+  }
+  .stepper_item {
+    margin-bottom: 30px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -79,7 +107,6 @@
   color: #7a7a7a;
   margin-bottom: 70px;
 }
-
 .image_bg {
   background-image: url("../images/circle_lines.png");
   max-width: 100%;
@@ -114,14 +141,15 @@
   padding: 30px;
   padding-bottom: 120px;
   padding-top: 60px;
+  width: 525px;
   max-width: 100%;
   height: auto;
 }
 .image_bg_elip img {
-  width: 50%;
+  width: 230px;
   height: auto;
   object-fit: contain;
-  margin-left: 15%;
+  margin-left: 18%;
   margin-top: -5%;
 }
 .wrapper h3 {
