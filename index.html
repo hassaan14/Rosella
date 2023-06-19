@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -31,7 +31,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="ms-auto navbar-nav">
+            <ul class="ms-auto navbar-nav option_menu">
               <li class="nav-item option nav_content">
                 <a class="nav-link active" aria-current="page" href="#"
                   >About</a
@@ -55,7 +55,7 @@
     </header>
     <main>
       <div class="container">
-        <section>
+        <section class="sec1">
           <div class="row">
             <div class="col my-auto">
               <article class="text">
@@ -75,9 +75,10 @@
                 </button>
               </div>
             </div>
-            <div class="col" style="width: 60%">
+            <div class="col">
               <div class="image_bg">
                 <img
+                  style="margin-left: 5%"
                   id="circle"
                   src="assets/images/Group 175.png"
                   class="img-fluid"
@@ -87,7 +88,7 @@
           </div>
         </section>
 
-        <section>
+        <section class="sec2">
           <div>
             <article class="text">
               <h2>How do we do it?</h2>
@@ -102,31 +103,53 @@
             <div class="col">
               <div class="image_bg_elip img-fluid">
                 <img
-                  class="img-fluid"
-                  src="assets/images/Group 166 1.png"
+                  id="img1"
+                  class="img-fluid Four_Screen"
+                  src="assets/images/spl 1.png"
                   alt="Background Image"
+                />
+                <img
+                  id="img2"
+                  class="img-fluid Four_Screen"
+                  src="assets/images/rec 1.png"
+                  alt="Background Image"
+                  style="display: none"
+                />
+                <img
+                  id="img3"
+                  class="img-fluid Four_Screen"
+                  src="assets/images/trsncripti 1.png"
+                  alt="Background Image"
+                  style="display: none"
+                />
+                <img
+                  id="img4"
+                  class="img-fluid Four_Screen"
+                  src="assets/images/view1 1.png"
+                  alt="Background Image"
+                  style="display: none"
                 />
               </div>
             </div>
 
-            <div class="col ms-auto wrapper">
+            <div class="col wrapper">
               <ul class="stepper">
-                <li class="stepper_item">
+                <li class="stepper_item" id="option1">
                   <h3 class="stepper_title">Launch The App</h3>
                   <p>Download & install Rosella app to get started</p>
                 </li>
-                <li class="stepper_item">
+                <li class="stepper_item" id="option2">
                   <h3 class="stepper_title">Hit Record Button</h3>
                   <p>Tap the record button before you start the meeting</p>
                 </li>
-                <li class="stepper_item">
+                <li class="stepper_item" id="option3">
                   <h3 class="stepper_title">View Your Recording</h3>
                   <p>
                     Rosella after recording transcribe all that you said into
                     text
                   </p>
                 </li>
-                <li class="stepper_item">
+                <li class="stepper_item" id="option4">
                   <h3 class="stepper_title">Win</h3>
                   <p>
                     Most of the work has been done for you so let’s move on to
@@ -138,7 +161,7 @@
           </div>
         </section>
 
-        <section>
+        <section class="sec3">
           <div class="row">
             <div class="col ms-auto">
               <div>
@@ -228,7 +251,7 @@
           </div>
         </section>
 
-        <section>
+        <section class="sec4">
           <div>
             <article class="text">
               <h2>People who loved our work</h2>
@@ -305,6 +328,7 @@
                 <img class="Stars" src="assets/images/Star 5.png" />
               </div>
             </div>
+
           </div>
           <div class="dashes">
             <img
@@ -315,10 +339,10 @@
           </div>
         </section>
 
-        <section>
+        <section class="sec5">
           <div class="black_box">
             <div class="row">
-              <div class="col">
+              <div class="col-5">
                 <img
                   id="red_logo_box"
                   src="assets/images/red_box_logo.png"
@@ -326,7 +350,7 @@
                   class="img-fluid"
                 />
               </div>
-              <div class="col">
+              <div class="col-6">
                 <article class="black_box_content">
                   <h1>
                     Rosella is the most used progress notes app by social
@@ -350,7 +374,7 @@
           </div>
         </section>
 
-        <section>
+        <section class="sec6">
           <div class="text">
             <h2 style="text-align: center; margin-bottom: 60px">FAQs</h2>
           </div>
@@ -434,7 +458,7 @@
           </div>
         </section>
 
-        <section>
+        <section class="sec7">
           <div class="black_rectangle">
             <div class="row">
               <div class="col">
@@ -444,7 +468,6 @@
                     src="assets/images/Group 186.png"
                     alt="App Store"
                     class="container-fluid"
-                    style="width: 150px; height: auto; margin-bottom: 30px"
                   />
                 </article>
               </div>
@@ -464,7 +487,7 @@
               style="
                 display: flex;
                 flex-direction: column;
-                justify-content: start;
+                justify-content: space-between;
                 align-items: start;
               "
             >
@@ -473,7 +496,6 @@
                   src="assets/images/Rosella logo red 1.png"
                   alt="Rosella Logo Red"
                   class="container-fluid"
-                  style="width: 200px"
                 />
               </div>
               <div style="margin-left: 5%">
@@ -508,6 +530,49 @@
         </section>
       </div>
     </main>
+    </body>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let option1 = document.getElementById("option1");
+      let option2 = document.getElementById("option2");
+      let option3 = document.getElementById("option3");
+      let option4 = document.getElementById("option4");
+    
+      let img1 = document.getElementById("img1");
+      let img2 = document.getElementById("img2");
+      let img3 = document.getElementById("img3");
+      let img4 = document.getElementById("img4");
+    
+      option1.addEventListener("mouseenter", function () {
+        img1.style.display = "flex";
+        img2.style.display = "none";
+        img3.style.display = "none";
+        img4.style.display = "none";
+      });
+    
+      option2.addEventListener("mouseenter", function () {
+        img1.style.display = "none";
+        img2.style.display = "flex";
+        img3.style.display = "none";
+        img4.style.display = "none";
+      });
+    
+      option3.addEventListener("mouseenter", function () {
+        img1.style.display = "none";
+        img2.style.display = "none";
+        img3.style.display = "flex";
+        img4.style.display = "none";
+      });
+    
+      option4.addEventListener("mouseenter", function () {
+        img1.style.display = "none";
+        img2.style.display = "none";
+        img3.style.display = "none";
+        img4.style.display = "flex";
+      });
+    });
+   
+  </script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
