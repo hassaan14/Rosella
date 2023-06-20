@@ -192,6 +192,30 @@
   background-color: #c70039;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.dots-3 {
+  width: 14px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: d5 1s infinite linear alternate;
+}
+@keyframes d5 {
+  0% {
+    box-shadow: 20px 0 #ffffff, -20px 0 #0002;
+    background: #ffffff;
+  }
+  33% {
+    box-shadow: 20px 0 #ffffff, -20px 0 #0002;
+    background: #0002;
+  }
+  66% {
+    box-shadow: 20px 0 #0002, -20px 0 #ffffff;
+    background: #0002;
+  }
+  100% {
+    box-shadow: 20px 0 #0002, -20px 0 #ffffff;
+    background: #ffffff;
+  }
+}
 .row {
   margin-bottom: 60px;
   display: flex;
@@ -205,6 +229,8 @@
   margin-inline: 6%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  width: 200px;
+  height: 300px;
 }
 .Box_heading {
   background-color: #f4f4f4;
@@ -254,8 +280,10 @@
 .Box:hover .Box_content {
   background-color: #292d2c;
   color: #ffffff;
-  width: 200px;
-  height: auto;
+}
+.Box:hover {
+  width: 220px;
+  height: 300px;
 }
 .Box:hover .Box_heading,
 .Box:hover .small_heading {
@@ -263,6 +291,7 @@
   color: #ffffff;
   width: 260px;
   height: auto;
+  border-radius: 6px;
 }
 .dashes {
   display: flex;
